@@ -111,7 +111,7 @@ flask run
 ```
 #### =================================================================================
 
-### Caso nada de errado o projeto vai esta rodando na rota: http://url
+### Caso nada de errado o projeto vai esta rodando na rota: http://127.0.0.1:5000
 
 # Autor
 
