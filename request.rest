@@ -1,14 +1,14 @@
 // CLIENT
 
 GET http://127.0.0.1:5000/clients
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4NDExODI1NywianRpIjoiNzI3N2NhYzAtMTlmOS00MTZjLTk5OTUtZTllZThkYzVkNTcxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6OSwibmJmIjoxNjg0MTE4MjU3LCJleHAiOjE2ODQxMjE4NTd9.YBheL0_2JhJ0tuGVXL37l63zPY7xs1pfVqa4efMRoAM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4NDE2ODM2NSwianRpIjoiZjA4YjgwN2QtM2I4YS00YTk2LWI4YzYtZmE3NmJmOWQxNzdjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjg0MTY4MzY1LCJleHAiOjE2ODQxNzE5NjV9.wchOwa1jg6NJRHK09OtD--X1Ais5x8egu1SHNy_P7nI
 
 ###
 GET http://127.0.0.1:5000/clients/all
 
 ###
-GET http://127.0.0.1:5000/clients/contract_product/4
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4NDEwNjA5NiwianRpIjoiMmMyNjkxMjAtYWUwZC00ZmIxLThhMWUtZjdkYmViNzY5YjI1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjg0MTA2MDk2LCJleHAiOjE2ODQxMDk2OTZ9.TsMxYsnojYxATQVDReo8mCyCyhcvM6uj4zKcStk0K5o
+GET http://127.0.0.1:5000/clients/contract_product/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4NDE2ODM2NSwianRpIjoiZjA4YjgwN2QtM2I4YS00YTk2LWI4YzYtZmE3NmJmOWQxNzdjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjg0MTY4MzY1LCJleHAiOjE2ODQxNzE5NjV9.wchOwa1jg6NJRHK09OtD--X1Ais5x8egu1SHNy_P7nI
 
 ###
 POST http://127.0.0.1:5000/clients/create
@@ -41,17 +41,17 @@ POST http://127.0.0.1:5000/products/register
 Content-Type: application/json
 
 {
-  "name": "P44",
+  "name": "P55",
   "value": 999,
   "type": "Avulso"
 }
 
 ###
-PUT http://127.0.0.1:5000/products/edit/4
+PUT http://127.0.0.1:5000/products/edit/1
 Content-Type: application/json
 
 {
-  "name": "P1226",
+  "name": "P88",
   "value": 1000
 }
 

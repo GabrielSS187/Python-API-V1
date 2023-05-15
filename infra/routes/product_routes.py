@@ -14,7 +14,7 @@ product_routes = Blueprint('product', __name__)
 def get_all_products():
     products = Product.query.all()
     result = [{'id': product.id, 'name': product.name,
-               'value': product.value} for product in products]
+               'value': product.value, 'type': product.type} for product in products]
     return jsonify(result), 200
 
 
