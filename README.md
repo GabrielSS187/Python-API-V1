@@ -1,5 +1,5 @@
 # Python-API-V1
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/GabrielSS187Python_API-V1/blob/main/LICENSE) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/GabrielSS187Python-API-V1/blob/main/LICENSE) 
 
 # Sobre o projeto
 
