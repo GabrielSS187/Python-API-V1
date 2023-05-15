@@ -1,0 +1,61 @@
+// CLIENT
+
+GET http://127.0.0.1:5000/clients
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4NDExODI1NywianRpIjoiNzI3N2NhYzAtMTlmOS00MTZjLTk5OTUtZTllZThkYzVkNTcxIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6OSwibmJmIjoxNjg0MTE4MjU3LCJleHAiOjE2ODQxMjE4NTd9.YBheL0_2JhJ0tuGVXL37l63zPY7xs1pfVqa4efMRoAM
+
+###
+GET http://127.0.0.1:5000/clients/all
+
+###
+GET http://127.0.0.1:5000/clients/contract_product/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4NDEwNjA5NiwianRpIjoiMmMyNjkxMjAtYWUwZC00ZmIxLThhMWUtZjdkYmViNzY5YjI1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjg0MTA2MDk2LCJleHAiOjE2ODQxMDk2OTZ9.TsMxYsnojYxATQVDReo8mCyCyhcvM6uj4zKcStk0K5o
+
+###
+POST http://127.0.0.1:5000/clients/create
+Content-Type: application/json
+
+{
+  "name": "Nathan",
+  "email": "nathan@gmail.com",
+  "password": "16678225"
+}
+
+###
+POST http://127.0.0.1:5000/clients/login
+Content-Type: application/json
+
+{
+  "email": "nathan@gmail.com",
+  "password": "16678225"
+}
+
+//=====================================================================================
+
+// PRODUCT
+
+###
+GET http://127.0.0.1:5000/products
+
+###
+POST http://127.0.0.1:5000/products/register
+Content-Type: application/json
+
+{
+  "name": "P44",
+  "value": 999,
+  "type": "Avulso"
+}
+
+###
+PUT http://127.0.0.1:5000/products/edit/4
+Content-Type: application/json
+
+{
+  "name": "P1226",
+  "value": 1000
+}
+
+###
+DELETE  http://127.0.0.1:5000/products/delete/9
+
+
