@@ -13,17 +13,18 @@ que os clientes cadastrados / registrados no sistema, contratarem os produtos di
 
 ## Rotas
 
-### User
-- 1 - ``SIGN-UP`` : ``POST`` http://localhost:8000/user/sign-up
-- 2 - ``SIGN-IN`` : ``POST`` http://localhost:8000/user/sign-in
+### Client
+- 1 - ``GET-CLIENT-BY-TOKEN`` : ``GET`` http://127.0.0.1:5000/clients
+- 2 - ``GET-ALL-CLIENTS`` : ``GET`` http://127.0.0.1:5000/clients/all
+- 3 - ``CLIENT-CONTRACT-PRODUCT``: ``GET`` http://127.0.0.1:5000/clients/contract_product/:id-product
+- 4 - ``CREATE-CLIENT``: ``POST`` http://127.0.0.1:5000/clients/create
+- 5 - ``CLIENT-LOGIN``: ``POST`` http://127.0.0.1:5000/clients/login
 
 ### Product
-- 1 - ``CREATE-PRODUCT`` : ``POST`` http://localhost:8000/product
-- 2 - ``EDIT-PRODUCT`` : ``PATCH`` http://localhost:8000/product/:id
-- 3 - ``DELETE-PRODUCT`` : ``DELETE`` http://localhost:8000/product/:id
-- 4 - ``GET-PRODUCT`` : ``GET`` http://localhost:8000/product/:id
-- 5 - ``GET-ALL-PRODUCT`` : ``GET`` http://localhost:8000/product
-- 6 - ``GET-ALL-CATEGORIES`` : ``GET`` http://localhost:8000/product/categories
+- 1 - ``GET-ALL-PRODUCTS`` : ``GET`` http://127.0.0.1:5000/products
+- 2 - ``REGISTER-PRODUCT`` : ``POST`` http://127.0.0.1:5000/products/register
+- 3 - ``EDIT-PRODUCT`` : ``PUT`` http://127.0.0.1:5000/products/edit/:id-product
+- 4 - ``DELETE-PRODUCT`` : ``DELETE`` http://127.0.0.1:5000/products/delete/:id-product
 
 ## Modelagem Conceitual de Dados
 ![Captura de Tela (372)](https://github.com/GabrielSS187/Python-API-V1/assets/86306877/172c3b4d-b587-4d2a-90a0-2e198b817f48)
