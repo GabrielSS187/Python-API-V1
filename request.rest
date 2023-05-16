@@ -1,22 +1,22 @@
 // CLIENT
 
 GET http://127.0.0.1:5000/clients
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4NDE2ODM2NSwianRpIjoiZjA4YjgwN2QtM2I4YS00YTk2LWI4YzYtZmE3NmJmOWQxNzdjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjg0MTY4MzY1LCJleHAiOjE2ODQxNzE5NjV9.wchOwa1jg6NJRHK09OtD--X1Ais5x8egu1SHNy_P7nI
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4NDIwNzc1OCwianRpIjoiZjdkNjAzNTEtNjc2ZS00ODBlLWE5NTYtZTViN2VhZmEzMWJmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjg0MjA3NzU4LCJleHAiOjE2ODQyMTEzNTh9.IWcBTxOu2dLNUw4cWBFCV7bGpuDbFc9mutF9aeTQxQU
 
 ###
 GET http://127.0.0.1:5000/clients/all
 
 ###
 GET http://127.0.0.1:5000/clients/contract_product/1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4NDE2ODM2NSwianRpIjoiZjA4YjgwN2QtM2I4YS00YTk2LWI4YzYtZmE3NmJmOWQxNzdjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjg0MTY4MzY1LCJleHAiOjE2ODQxNzE5NjV9.wchOwa1jg6NJRHK09OtD--X1Ais5x8egu1SHNy_P7nI
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4NDIwNzc1OCwianRpIjoiZjdkNjAzNTEtNjc2ZS00ODBlLWE5NTYtZTViN2VhZmEzMWJmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjg0MjA3NzU4LCJleHAiOjE2ODQyMTEzNTh9.IWcBTxOu2dLNUw4cWBFCV7bGpuDbFc9mutF9aeTQxQU
 
 ###
 POST http://127.0.0.1:5000/clients/create
 Content-Type: application/json
 
 {
-  "name": "Nathan",
-  "email": "nathan@gmail.com",
+  "name": "Gabriel",
+  "email": "gabriel@gmail.com",
   "password": "16678225"
 }
 
@@ -25,7 +25,7 @@ POST http://127.0.0.1:5000/clients/login
 Content-Type: application/json
 
 {
-  "email": "nathan@gmail.com",
+  "email": "gabriel@gmail.com",
   "password": "16678225"
 }
 
@@ -52,10 +52,10 @@ Content-Type: application/json
 
 {
   "name": "P88",
-  "value": 1000
+  "value": 200
 }
 
 ###
-DELETE  http://127.0.0.1:5000/products/delete/9
+DELETE  http://127.0.0.1:5000/products/delete/1
 
 

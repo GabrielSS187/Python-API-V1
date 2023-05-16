@@ -5,7 +5,6 @@ Revises: b51f5b7c0597
 Create Date: 2023-05-14 16:48:31.234069
 
 """
-import uuid
 from alembic import op
 import sqlalchemy as sa
 
@@ -21,8 +20,8 @@ def upgrade():
     op.create_table(
         'contract_product',
         sa.Column('id', sa.String(length=255), primary_key=True, nullable=False),
-        sa.Column('account_id', sa.String(length=255), sa.ForeignKey('account.id'), nullable=False),
-        sa.Column('product_id', sa.Integer(), sa.ForeignKey('product.id'), nullable=False),
+        sa.Column('account_id', sa.String(length=255), sa.ForeignKey('account.id', ondelete='CASCADE'), nullable=False),
+        sa.Column('product_id', sa.Integer(), sa.ForeignKey('product.id', ondelete='CASCADE'), nullable=False),
         sa.Column('created_at', sa.DateTime(), nullable=False, server_default=sa.func.now())
     )
 
