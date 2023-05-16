@@ -26,6 +26,9 @@ que os clientes cadastrados / registrados no sistema, contratarem os produtos di
 - 3 - ``EDIT-PRODUCT`` : ``PUT`` http://127.0.0.1:5000/products/edit/:id-product
 - 4 - ``DELETE-PRODUCT`` : ``DELETE`` http://127.0.0.1:5000/products/delete/:id-product
 
+## Vídeo Usando á API
+https://github.com/GabrielSS187/Python-API-V1/assets/86306877/9821f295-8ee6-4b58-a52c-295cbe5ced7c
+
 ## Modelagem Conceitual de Dados
 ![Captura de Tela (372)](https://github.com/GabrielSS187/Python-API-V1/assets/86306877/172c3b4d-b587-4d2a-90a0-2e198b817f48)
 
